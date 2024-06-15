@@ -2,9 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/Prob1/Prob1.iml" filepath="$PROJECT_DIR$/Prob1/Prob1.iml" />
-      <module fileurl="file://$PROJECT_DIR$/Prob2/Prob2.iml" filepath="$PROJECT_DIR$/Prob2/Prob2.iml" />
-      <module fileurl="file://$PROJECT_DIR$/fpp-assignment09.iml" filepath="$PROJECT_DIR$/fpp-assignment09.iml" />
+      <module fileurl="file://$PROJECT_DIR$/fpp-assignment-09.iml" filepath="$PROJECT_DIR$/fpp-assignment-09.iml" />
     </modules>
   </component>
 </project>

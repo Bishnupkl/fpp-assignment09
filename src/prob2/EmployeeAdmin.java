@@ -1,4 +1,4 @@
-package prob1;
+package prob2;
 
 import java.util.HashMap;
 import java.util.List;
