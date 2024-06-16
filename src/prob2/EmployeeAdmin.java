@@ -1,7 +1,6 @@
 package prob2;
 
-import java.util.HashMap;
-import java.util.List;
+import java.util.*;
 
 public class EmployeeAdmin {
 	
@@ -13,8 +12,22 @@ public class EmployeeAdmin {
 	*/
 	public static List<Employee> prepareReport(HashMap<String, Employee> table, List<String> socSecNums) {
 		//IMPLEMENT
-		return null;
-		
+		List<Employee> employees = new ArrayList<>();
+		for(String socSecNum: socSecNums){
+			Employee employee = table.get(socSecNum);
+			if(employee != null && employee.getSalary() > 80000)
+				employees.add(employee);
+		}
+//		anonymous
+//		Collections.sort(employees, new Comparator<Employee>() {
+//			@Override
+//			public int compare(Employee ob1, Employee ob2){
+//				return ob1.getSsn().compareTo(ob2.getSsn());
+//			}
+//		});
+//		Lambda
+		Collections.sort(employees, (ob1, ob2) -> ob1.getSsn().compareTo(ob2.getSsn()));
+		return employees;
 	}
 	
 }
