@@ -19,14 +19,11 @@ public class Test {
 		boolean[] expectedOutput = {true, false};
 		boolean[] results = new boolean[2];
 		Student s = new Student("Pierre", "Fromage", 2.8, Standing.FRESHMAN);
-		System.out.println(map);
 		Key pierre = new Key("Pierre", "Fromage");
 		Key richard = new Key("Richard", "Fremling");
-		System.out.println(map.get(pierre));
-//
-//		results[0] = (map.get(pierre).equals(s));
-//		results[1] = map.containsKey(richard);
-//		System.out.println((Arrays.equals(expectedOutput, results) ? "pass" : "fail"));
+		results[0] = (map.get(pierre).equals(s));
+		results[1] = map.containsKey(richard);
+		System.out.println((Arrays.equals(expectedOutput, results) ? "pass" : "fail"));
 
 	}
 
