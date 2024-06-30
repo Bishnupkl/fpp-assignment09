@@ -26,7 +26,8 @@ public class EmployeeAdmin {
 //			}
 //		});
 //		Lambda
-		Collections.sort(employees, (ob1, ob2) -> ob1.getSsn().compareTo(ob2.getSsn()));
+		Collections.sort(employees,
+				(ob1, ob2) -> ob1.getSsn().compareTo(ob2.getSsn()));
 		return employees;
 	}
 	

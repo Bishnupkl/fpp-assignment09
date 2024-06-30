@@ -1,5 +1,7 @@
 package prob2;
 
+import java.util.Objects;
+
 //DO NOT MODIFY IN ANY WAY
 public class Employee {
 	private String name;
@@ -42,5 +44,9 @@ public class Employee {
 		if(!(ob instanceof Employee)) return false;
 		Employee e = (Employee)ob;
 		return e.ssn.equals(ssn);
+	}
+	@Override
+	public int hashCode(){
+		return Objects.hash(name, salary, ssn);
 	}
 }
